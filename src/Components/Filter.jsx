@@ -61,7 +61,7 @@ export function Filters() {
           type="checkbox"
           name="L"
           value="L"
-          onChange={() => dispatch({ type: "FILTER_SIZE", payload: "M" })}
+          onChange={() => dispatch({ type: "FILTER_SIZE", payload: "L" })}
         />
         <span>L</span>
       </label>
@@ -70,7 +70,7 @@ export function Filters() {
           type="checkbox"
           name="XL"
           value="XL"
-          onChange={() => dispatch({ type: "FILTER_SIZE", payload: "M" })}
+          onChange={() => dispatch({ type: "FILTER_SIZE", payload: "XL" })}
         />
         <span>XL</span>
       </label>

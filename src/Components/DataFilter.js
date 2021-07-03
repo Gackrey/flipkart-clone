@@ -26,9 +26,15 @@ export function filterData(filterSize, filterBrand, filterSex, Products) {
     );
   }
   if (filterSize.length > 0) {
-    updatedProducts = [...Products].filter((prod) =>
-      prod.sizes.filter((sz) => filterSize.includes(sz))
-    );
+    updatedProducts = [...Products].filter((product) => {
+      let flag = false;
+      filterSize.forEach((size) => {
+        if (product.sizes.includes(size)) {
+          flag = true;
+        }
+      });
+      return flag;
+    });
   }
   if (
     filterSex.length === 0 &&

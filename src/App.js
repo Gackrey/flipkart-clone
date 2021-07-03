@@ -1,9 +1,9 @@
 import "./styles.css";
-import { ProductListing, Filters } from "./Components";
+import { ProductListing, Filters, Nav } from "./Components";
 export default function App() {
   return (
     <div className="App">
-      <h1>Flipkart Clone</h1>
+      <Nav />
       <div className="main-page">
         <Filters />
         <ProductListing />
