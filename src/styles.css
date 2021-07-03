@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.main-page {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+label {
+  display: block;
+  margin: 5px 10px;
+  text-align: start;
+}
+label > span {
+  padding-left: 5px;
+}
+.card {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+.card:hover {
+  box-shadow: 0, 0, 10, 10, gray;
+}
+.image {
+  width: 300px;
+  height: 300px;
+}
+.brand_name {
+  color: gray;
+  margin-right: 10px;
+}
+.prices,
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.prices > span {
+  margin: 0 5px;
+}
+.all-prod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.original-price {
+  color: grey;
+  text-decoration: line-through;
+}
+.discount {
+  color: green;
+}
+.filters {
+  margin-right: 10px;
+}
+.clear-filters {
+  border-bottom: 3px solid orchid;
+  margin: 10px;
+  cursor: default;
+}
