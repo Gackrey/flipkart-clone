@@ -14,19 +14,19 @@ export function getSortedData(sortBy, Products) {
   } else return Products;
 }
 export function filterData(filterSize, filterBrand, filterSex, Products) {
-  let updatedProducts = [];
+  let updatedProducts = [...Products];
   if (filterBrand.length > 0) {
-    updatedProducts = [...Products].filter((prod) =>
+    updatedProducts = updatedProducts.filter((prod) =>
       filterBrand.includes(prod.brand)
     );
   }
   if (filterSex.length > 0) {
-    updatedProducts = [...Products].filter((prod) =>
+    updatedProducts = updatedProducts.filter((prod) =>
       filterSex.includes(prod.Ideal_for)
     );
   }
   if (filterSize.length > 0) {
-    updatedProducts = [...Products].filter((product) => {
+    updatedProducts = updatedProducts.filter((product) => {
       let flag = false;
       filterSize.forEach((size) => {
         if (product.sizes.includes(size)) {
