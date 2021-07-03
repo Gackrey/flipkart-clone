@@ -1,6 +1,6 @@
 import { Product } from "./Product";
 import { useCart } from "../Context/CartContext";
-import { getSortedData, filterData } from "./DataFilter";
+import { getSortedData, filterData } from "../utils/DataFilter";
 export function ProductListing() {
   const { Products, sortBy, filterSize, filterBrand, filterSex } = useCart();
   const getSorted = getSortedData(sortBy, Products);
